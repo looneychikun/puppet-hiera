@@ -23,6 +23,11 @@ end -%>
 <% end -%>
   :pkcs7_private_key: <%= @_eyaml_pkcs7_private_key %>
   :pkcs7_public_key:  <%= @_eyaml_pkcs7_public_key %>
+<% if @eyaml_pkcs7_vault -%>
+  :pkcs7_vault_appid: <%= @eyaml_pkcs7_vault_appid %>
+  :pkcs7_vault_userid: <%= @eyaml_pkcs7_vault_userid %>
+  :pkcs7_vault_address: <%= @eyaml_pkcs7_vault_address %>
+<% end -%>
 <% end -%>
 <% if @eyaml_gpg -%>
   :encrypt_method: "gpg"
